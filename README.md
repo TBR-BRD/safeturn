@@ -4,6 +4,16 @@
 
 Ziel der ersten Version: Ein LKW steht oder faehrt langsam, ein Fahrradfahrer befindet sich rechts neben oder rechts hinter dem Fahrzeug. Zwei Smartphones liefern GPS-Position, Geschwindigkeit und Fahrtrichtung lokal per Bluetooth Low Energy an ein ESP32-Gateway im LKW. Das ESP32-Gateway berechnet das Risiko lokal und warnt den Fahrer ueber einen Summer.
 
+## Short Summary
+
+SafeTurn is a local safety prototype designed to reduce right-turn and blind-spot accidents involving trucks, cyclists, and pedestrians.
+
+The system works without cloud services, mobile data, or a central server. An ESP32 gateway installed inside the truck communicates via Bluetooth Low Energy (BLE) with smartphones used by the truck driver and vulnerable road users. The smartphones provide GPS position, speed, and heading data. The ESP32 evaluates the local risk situation and triggers an acoustic warning through a buzzer inside the truck.
+
+This first MVP uses only one ESP32 gateway powered from the truck’s cigarette lighter or USB power supply. No external sensors, no additional ESP32 units, no truck CAN bus connection, and no turn-signal integration are required.
+
+The project is currently an experimental prototype and not a certified safety system.
+
 <br>
 <a href="https://www.buymeacoffee.com/thoralf.brandt" target="_blank">
   <img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174">
