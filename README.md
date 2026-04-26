@@ -4,6 +4,12 @@
 
 Ziel der ersten Version: Ein LKW steht oder faehrt langsam, ein Fahrradfahrer befindet sich rechts neben oder rechts hinter dem Fahrzeug. Zwei Smartphones liefern GPS-Position, Geschwindigkeit und Fahrtrichtung lokal per Bluetooth Low Energy an ein ESP32-Gateway im LKW. Das ESP32-Gateway berechnet das Risiko lokal und warnt den Fahrer ueber einen Summer.
 
+<br>
+<a href="https://www.buymeacoffee.com/thoralf.brandt" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174">
+</a>
+<br>
+
 > Status: MVP / Proof of Concept. Nicht fuer den produktiven Strassenverkehr zugelassen.
 
 ![SafeTurn Story](docs/images/story-red-light.png)
