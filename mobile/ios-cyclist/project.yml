@@ -1,0 +1,22 @@
+name: SafeTurnCyclist
+options:
+  bundleIdPrefix: de.safeturn
+  deploymentTarget:
+    iOS: '16.0'
+settings:
+  base:
+    SWIFT_VERSION: 5.0
+targets:
+  SafeTurnCyclist:
+    type: application
+    platform: iOS
+    sources:
+      - SafeTurnCyclist
+    info:
+      path: SafeTurnCyclist/Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.safeturn.cyclist
+        INFOPLIST_FILE: SafeTurnCyclist/Info.plist
+    entitlements:
+      path: SafeTurnCyclist/SafeTurnCyclist.entitlements

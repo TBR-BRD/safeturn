@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>NSBluetoothAlwaysUsageDescription</key>
+  <string>SafeTurn verbindet sich lokal per Bluetooth LE mit einem ESP32-Gateway im LKW.</string>
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>SafeTurn nutzt GPS, um Fahrradposition, Geschwindigkeit und Fahrtrichtung lokal an das ESP32-Gateway zu senden.</string>
+  <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+  <string>SafeTurn kann im Hintergrund Fahrradposition, Geschwindigkeit und Fahrtrichtung an ein lokales ESP32-Gateway senden.</string>
+  <key>UIBackgroundModes</key>
+  <array>
+    <string>bluetooth-central</string>
+    <string>location</string>
+  </array>
+</dict>
+</plist>
