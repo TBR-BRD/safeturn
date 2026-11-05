@@ -55,6 +55,14 @@ GPS, Geschwindigkeit, Richtung         GPS, Geschwindigkeit, Richtung
 
 Ohne Beacon, UWB oder Gateway koennen sich zwei Smartphones nicht lokal, robust und automatisch genug fuer diesen Anwendungsfall erkennen. Das ESP32-Gateway dient als lokaler Knoten im LKW. Es empfaengt GPS-Daten der beteiligten Apps, berechnet das Risiko und gibt eine lokale akustische Warnung aus.
 
+## Perspektive: OpenTrafficMap und ITS-G5
+
+[OpenTrafficMap](https://opentrafficmap.org/) stellt empfangene Verkehrsnachrichten des Standards ITS-G5 auf einer Live-Karte dar. Dazu gehoeren beispielsweise CAM-Nachrichten mit Position und Bewegung von Fahrzeugen sowie DENM-Warnungen zu Ereignissen wie Baustellen oder liegengebliebenen Fahrzeugen. Die Daten stammen von speziellen ITS-G5-Empfaengern, die Nachrichten erfassen und ueber Netzwerkverbindungen an OpenTrafficMap weiterleiten.
+
+Eine direkte Integration in den aktuellen SafeTurn-MVP besteht nicht. SafeTurn verwendet BLE zwischen Smartphones und einem ESP32 DevKit; ITS-G5 nutzt dagegen eine separate Funktechnik im 5,9-GHz-Band. Eine technische Erprobung wuerde daher zusaetzliche Empfangshardware wie einen ESP32-C5-basierten ITS-G5-Empfaenger sowie eine Netzwerkanbindung benoetigen. Die von OpenTrafficMap dargestellten Daten koennten allenfalls eine optionale Informationsquelle sein. Die lokale BLE-Risikoberechnung und Warnung bleiben davon unabhaengig; externe Verkehrsdaten sind nicht als Grundlage fuer sicherheitsrelevante Warnungen vorgesehen.
+
+Weiterfuehrende Informationen: [OpenTrafficMap](https://opentrafficmap.org/), [ITS-G5-Receiver](https://codeberg.org/opentrafficmap/its-g5-receiver), [Receiver-Firmware](https://codeberg.org/opentrafficmap/its-g5-receiver-firmware) und [c't-Beitrag](https://www.heise.de/hintergrund/OpenTrafficMap-Live-Verkehrskarte-im-Eigenbau-11406126.html).
+
 ## Ordnerstruktur
 
 ```text

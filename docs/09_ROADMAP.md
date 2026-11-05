@@ -40,6 +40,13 @@ Optionen:
 - Smartphone-Kamera/Radar nicht im MVP,
 - Karten-/Kreuzungserkennung.
 
+## Version 0.6 / ITS-G5 und OpenTrafficMap (Recherche)
+
+- Pruefen, ob ITS-G5-Verkehrsnachrichten als optionale Informationsquelle geeignet sind.
+- Empfaengerhardware, Netzwerkanbindung, Protokoll und Datenverfuegbarkeit untersuchen.
+- Eine moegliche Anzeige oder Datenschnittstelle getrennt von der lokalen SafeTurn-Risikoberechnung evaluieren.
+- Keine sicherheitsrelevante Warnung von OpenTrafficMap- oder ITS-G5-Daten abhaengig machen.
+
 ## Version 1.0 / Feldpilot
 
 - Test auf Betriebshof.
