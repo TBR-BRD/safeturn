@@ -1,5 +1,7 @@
 # SafeTurn
 
+🇩🇪 Deutsch · [🇬🇧 English](README_EN.md)
+
 **SafeTurn** ist ein technischer Prototyp fuer eine lokale Abbiege- und Totwinkel-Warnung im LKW.
 
 Ziel der ersten Version: Ein LKW steht oder faehrt langsam, ein Fahrradfahrer befindet sich rechts neben oder rechts hinter dem Fahrzeug. Zwei Smartphones liefern GPS-Position, Geschwindigkeit und Fahrtrichtung lokal per Bluetooth Low Energy an ein ESP32-Gateway im LKW. Das ESP32-Gateway berechnet das Risiko lokal und warnt den Fahrer ueber einen Summer.
